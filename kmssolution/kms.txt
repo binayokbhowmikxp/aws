@@ -51,3 +51,26 @@ Highly sensitive data should be encrypted by the application prior to putting an
 In the case of S3, the application code can also set parameters for server-side encryption so that the S3 service will handle the encryption for the particular objects. S3 buckets can also be configured to have default server-side encryption enabled for all new objects. In this case encryption is transparent to the application code.
 
 As a best practice we want to ensure that S3 server-side encryption is enabled by default where possible.
+
+---------------------------
++Client-Side vs.Server-Side+
+----------------------------
+
+Client-Side Encryption
+Pros
+The cloud provider, that is AWS, or anyone with access to the underlying disk volumes will only see ciphered or encrypted data. The data is effectively useless to them unless of course they have permissions or access to the encryption keys.
+
+Cons
+The code will have additional complexity of using SDK's and libraries required to perform cryptographic functions. Some additional understanding of encryption is also needed to do this effectively. There is always the potential of this additional functionality being inadvertently omitted from the code .
+
+Server-Side Encryption
+Pros
+For most use cases server-side encryption can be completely transparent to the developer or application code. So, from an implementation perspective, it is simpler and easier to use.
+
+Cons
+Anyone with read access permissions to the service in question will perform a read and be able to see the plain text data.
+
+Best Practices
+As a best practice it is highly advisable to leverage server-side encryption as a default deployment pattern for any AWS services being used to store data.
+
+The decision to use client-side encryption in your applications may be made on a case-by-case basis for sensitive data or to meet any compliance requirements.
