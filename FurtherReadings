@@ -1,0 +1,17 @@
+- Securing files in S3 buckets:
+https://aws.amazon.com/premiumsupport/knowledge-center/secure-s3-resources/
+
+- Amazon ECR image scanning
+https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html
+
+- How to Set Up Continuous Golden AMI Vulnerability Assessments with Amazon Inspector
+https://aws.amazon.com/blogs/security/how-to-set-up-continuous-golden-ami-vulnerability-assessments-with-amazon-inspector/
+
+- Build a golden AMI pipeline with Tenable.io available in AWS Marketplace
+https://aws.amazon.com/blogs/awsmarketplace/build-a-golden-ami-pipeline-with-tenable-io-available-in-aws-marketplace/
+
+- Vulnerability assessment and management (VAM)
+https://aws.amazon.com/marketplace/solutions/security/vulnerability-assessment
+
+- AWS Vulnerability Scanning & Assessment
+https://www.alertlogic.com/solutions/aws-vulnerability-scanning-and-assessment/
